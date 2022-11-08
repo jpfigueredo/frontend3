@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { TerceiraAula } from "./lessons/index";
+import { Cards } from "./components/index";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         </a>
       </header> */}
       <div>
-        <TerceiraAula></TerceiraAula>
+        <Cards></Cards>
       </div>
     </div>
   );

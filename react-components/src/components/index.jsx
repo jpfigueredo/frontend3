@@ -1,6 +1,6 @@
 import logo from ".././logo.svg";
 
-export function TerceiraAula() {
+export function Cards() {
   // const title = "Teste";
   const components = [
     { name: "Component Card", description: 'O "usuário"', image: "" },
