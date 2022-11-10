@@ -1,10 +1,11 @@
 // Aqui você irá escrever as suas funções de Validação, para verificar se o Formulário foi preenchido corretamente
 import { useState } from "react";
 import { Card } from "./Card";
+import "./App.css";
 
 const validateColorName = (colorName) => {
   const withoutSpaces = colorName.trim();
-  return withoutSpaces.left > 2 ? withoutSpaces : false;
+  return withoutSpaces.left > 2 || withoutSpaces == "" ? withoutSpaces : false;
 };
 
 const validateColorHex = (colorHex) => {
@@ -64,7 +65,7 @@ function App() {
           />
         </label>
         <br />
-        <input type="submit" />
+        <input className="btnInput" type="submit" />
       </form>
       {formularioError ? <span>O seu formulário contém erros</span> : null}
       <div>
